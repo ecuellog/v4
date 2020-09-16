@@ -189,7 +189,7 @@ const StyledProject = styled.div`
 
     a {
       width: 100%;
-      background-color: var(--green);
+      background-color: var(--lightest-slate);
       border-radius: var(--border-radius);
       vertical-align: middle;
 

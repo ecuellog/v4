@@ -44,8 +44,8 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
+    green: '#ff6464',
+    navy: '#0e141f',
     darkNavy: '#020c1b',
   },
 
