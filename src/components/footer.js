@@ -71,18 +71,18 @@ const Footer = () => (
     <StyledSocialLinks>
       <ul>
         {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
-              <li key={i}>
-                <a href={url} aria-label={name}>
-                  <Icon name={name} />
-                </a>
-              </li>
-            ))}
+          socialMedia.map(({ name, url }, i) => (
+            <li key={i}>
+              <a href={url} aria-label={name}>
+                <Icon name={name} />
+              </a>
+            </li>
+          ))}
       </ul>
     </StyledSocialLinks>
 
     <StyledCredit tabindex="-1">
-      <a href="https://github.com/bchiang7/v4">
+      <a href="https://github.com/bchiang7/v4" target="_blank" rel="noopener noreferrer">
         <div>Original design by Brittany Chiang. Modified by Edgardo Cuello.</div>
       </a>
     </StyledCredit>

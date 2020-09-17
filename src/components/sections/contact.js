@@ -55,7 +55,7 @@ const Contact = () => {
         Whether you have a question or just want to say hi, I'll try my best to get back to you!
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
+      <a className="email-link" href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
         Say Hello
       </a>
     </StyledContactSection>

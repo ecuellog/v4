@@ -246,6 +246,7 @@ const Featured = () => {
           node {
             frontmatter {
               title
+              overline
               cover {
                 childImageSharp {
                   fluid(maxWidth: 700, traceSVG: { color: "#64ffda" }) {
@@ -283,12 +284,12 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover } = frontmatter;
+            const { external, title, overline, tech, github, cover } = frontmatter;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
-                  <p className="project-overline">Featured Project</p>
+                  <p className="project-overline">{overline}</p>
                   <h3 className="project-title">{title}</h3>
                   <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
 
@@ -302,12 +303,20 @@ const Featured = () => {
 
                   <div className="project-links">
                     {github && (
-                      <a href={github} aria-label="GitHub Link">
+                      <a
+                        href={github}
+                        aria-label="GitHub Link"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         <Icon name="GitHub" />
                       </a>
                     )}
                     {external && (
-                      <a href={external} aria-label="External Link">
+                      <a
+                        href={external}
+                        aria-label="External Link"
+                        target="_blank"
+                        rel="noopener noreferrer">
                         <Icon name="External" />
                       </a>
                     )}
@@ -315,7 +324,10 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
+                  <a
+                    href={external ? external : github ? github : '#'}
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <Img fluid={cover.childImageSharp.fluid} alt={title} className="img" />
                   </a>
                 </div>
