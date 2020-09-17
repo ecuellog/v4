@@ -47,18 +47,18 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hello there!</h1>;
+  const two = <h2 style={{ marginBottom: 0 }}>My name is</h2>;
+  const three = <h2 className="big-heading">Edgardo Cuello</h2>;
   const four = (
     <p>
-      I'm a software engineer based in Boston, MA specializing in building (and occasionally
-      designing) exceptional websites, applications, and everything in between.
+      I am a passionate software developer living in Vancouver, BC specializing in creating and
+      maintaining scalable applications for the web.
     </p>
   );
   const five = (
     <a href={`mailto:${email}`} className="email-link">
-      Get In Touch
+      Lets chat!
     </a>
   );
 
