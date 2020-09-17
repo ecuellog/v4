@@ -13,4 +13,4 @@ tech:
 showInProjects: true
 ---
 
-An intraweb solution for hispanic organizations to ease internal communications and employee connection in the remote work, post-pandemic future.
+An intraweb solution for hispanic organizations to ease internal communications and employee connection in the remote work, post-pandemic reality.
